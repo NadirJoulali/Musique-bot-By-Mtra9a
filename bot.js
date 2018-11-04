@@ -30,7 +30,7 @@ client.on('ready', function(){
     });
     }, 5000);
 });
-const devs = ["439187325503930369"];
+
 const prefix = "/"
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
