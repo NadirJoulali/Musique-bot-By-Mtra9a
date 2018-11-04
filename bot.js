@@ -7,7 +7,8 @@ const YouTube = require('simple-youtube-api');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const client = new Discord.Client();
-
+const devs = ["496405342524145664"]
+const data = {}
 
 client.on('ready', function(){
  console.log(`Logged in as ${client.user.tag}!`);
