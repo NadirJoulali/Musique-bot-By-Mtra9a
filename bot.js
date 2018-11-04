@@ -7,7 +7,7 @@ const YouTube = require('simple-youtube-api');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const client = new Discord.Client();
-const devs = ["496405342524145664"]
+
 const data = {}
 
 client.on('ready', function(){
@@ -322,7 +322,7 @@ client.on('message' , message => {
 }
  });
 
-const devs = ["496405342524145664"]
+const dev = ["496405342524145664"]
 const adminprefix = "*";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
