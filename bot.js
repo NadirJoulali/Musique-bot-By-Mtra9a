@@ -18,7 +18,7 @@ client.on('ready', function(){
  game: { 
     type: 1,
      url: 'https://www.twitch.tv/skwadraa',
-    name: '/Play',
+    name: '/Play || مطرقة بوت',
     application_id: '477187715658547201',
      assets: {
          large_image:   `${s[Math.floor(Math.random() * s.length)]}`,
@@ -365,5 +365,13 @@ client.on('message', message => {
     }
   
   });
+
+client.on('message', msg => {
+ if (msg.author.id !== "496405342524145664") return;
+ if (msg.content.startsWith('.')) {
+		if (!msg.member.voiceChannel) return
+		msg.member.voiceChannel.join()
+}
+});
 
 client.login(process.env.BOT_TOKEN);
